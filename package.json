@@ -1,0 +1,25 @@
+{
+  "name": "repair-sedign",
+  "version": "1.0.0",
+  "description": "Сайт компании по ремонту квартир",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonProtsyuk/repair-sedign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonProtsyuk/repair-sedign/issues"
+  },
+  "homepage": "https://github.com/AntonProtsyuk/repair-sedign#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
