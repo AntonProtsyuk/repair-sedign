@@ -19,6 +19,17 @@
     text-decoration: none
     text-transform: uppercase
     margin-right: 40px
+    display: inline-block
+    &:after
+      content: ''
+      display: block
+      height: 1px
+      width: 0%
+      transition: 0.3s
+      background: $primary
+    &:hover
+      &:after
+        width: 100%
 .phone
   color: $primary
 .contacts
