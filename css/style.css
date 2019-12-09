@@ -326,7 +326,8 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.93rem; }
   .button:hover {
     cursor: pointer; }
   .button--outline {
@@ -351,9 +352,12 @@ template {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+html {
+  font-size: 14px; }
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   text-align: center;
@@ -369,6 +373,45 @@ body {
       height: 2px;
       background: #E3B873;
       margin: 0 10px; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+    html .nav__item {
+      margin-right: 1rem; } }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+    color: #ffffff;
+    text-decoration: none; }
+  .contacts__button {
+    display: none; }
+  .title {
+    font-size: 1.64rem; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__content {
+    max-width: 22.86rem; }
+  .hero__text {
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem; } }
+
+@media screen and (max-heigt: 500px) {
+  .hero__scroll-down {
+    display: none; } }
 
 .header {
   position: fixed;
@@ -392,7 +435,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.85rem;
   display: inline-block; }
   .nav__item:after {
     content: '';
@@ -437,10 +480,11 @@ body {
     margin-top: -100px;
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
-    max-width: 670px;
-    position: relative; }
+    max-width: 47.85rem;
+    position: relative;
+    margin-left: 4.28rem; }
   .hero__text {
-    font-size: 22px;
+    font-size: 1.57rem;
     max-width: 500px; }
   .hero__button {
     margin-right: 20px; }
@@ -448,8 +492,8 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
     background-color: #131313;
     color: #ffffff;
     text-transform: uppercase;
@@ -485,6 +529,8 @@ body {
     color: #E3B873;
     transition: 0.2s;
     transform: rotate(90deg); }
+    .instagram__link:hover {
+      color: #ffffff; }
     .instagram__link:after {
       content: '';
       width: 50px;
@@ -496,6 +542,6 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px; }
+  font-size: 2.857rem; }
   .title--primary {
     color: #E3B873; }
