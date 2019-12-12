@@ -8,8 +8,9 @@ body
 .section
   &-title
     text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva one', cursive
+    &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva one', cursive
     &__image
       display: flex
       align-items: center
@@ -20,6 +21,12 @@ body
         height: 2px
         background: $primary
         margin: 0 10px
+    &__description
+      margin: auto
+      margin-top: 2.64rem
+      font-size: 1.07rem
+      line-height: 135%
+      max-width: 21.86rem
 img
   max-width: 100%
         
