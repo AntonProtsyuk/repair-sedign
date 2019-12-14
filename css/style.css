@@ -667,6 +667,20 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.button-up {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  background-color: #131313;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px;
+  cursor: pointer; }
+  .button-up:hover {
+    background-color: #E3B873; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
