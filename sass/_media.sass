@@ -5,6 +5,8 @@
       &__item
         margin-right: 1rem
 @media screen and ( max-width: 992px )
+  .design
+    background-color: $dark
   .nav
     display: none
   .hero
@@ -17,6 +19,10 @@
     align-items: center
   .card
     margin-bottom: -4.21rem
+    &__item
+      &--ellipsis
+        overflow: hidden
+        display: none
     &__text
       margin: 0
       position: relative
@@ -24,8 +30,11 @@
       left: -1px
       max-width: 270px
   .section-title
+    &__heading
+      color: $light
     &__description
       max-width: 28rem
+      color: $light
     
       
 @media screen and ( max-width: 570px )
