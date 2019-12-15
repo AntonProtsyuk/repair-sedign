@@ -322,6 +322,17 @@ template {
   max-width: 1256px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-50 {
+  width: 50%; }
+
 .button {
   padding: 11px 24px;
   border: none;
@@ -392,27 +403,51 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem; }
 
-.section-title {
-  text-align: center; }
-  .section-title__heading {
-    text-transform: uppercase;
-    font-family: 'Yeseva one', cursive; }
-  .section-title__image {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .section-title__image::after, .section-title__image::before {
-      content: '';
-      width: 32px;
-      height: 2px;
-      background: #E3B873;
-      margin: 0 10px; }
-  .section-title__description {
-    margin: auto;
-    margin-top: 2.64rem;
-    font-size: 1.07rem;
-    line-height: 135%;
-    max-width: 21.86rem; }
+.section {
+  padding: 60px 0; }
+  .section--dark {
+    background-color: #131313;
+    color: #ffffff; }
+  .section-title {
+    text-align: center; }
+    .section-title__text {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      max-width: 31.57rem; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 90px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 2rem; }
+    .section-title--left {
+      text-align: left; }
+    .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva one', cursive;
+      line-height: 138%; }
+      .section-title__heading--primary {
+        color: #E3B873;
+        text-align: left; }
+    .section-title__image {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .section-title__image::after, .section-title__image::before {
+        content: '';
+        width: 32px;
+        height: 2px;
+        background: #E3B873;
+        margin: 0 10px; }
+    .section-title__description {
+      margin: auto;
+      margin-top: 2.64rem;
+      font-size: 1.07rem;
+      line-height: 135%;
+      max-width: 21.86rem; }
 
 img {
   max-width: 100%; }
@@ -485,6 +520,15 @@ img {
     height: 100%;
     margin-top: -100px;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__content {
     max-width: 47.85rem;
     position: relative;
@@ -502,7 +546,7 @@ img {
   .hero__scroll-down {
     position: absolute;
     left: 0;
-    bottom: -3.42rem;
+    bottom: 0;
     min-width: 17.6rem;
     min-height: 6.92rem;
     background-color: #131313;
@@ -511,7 +555,8 @@ img {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    z-index: 3; }
     .hero__scroll-down:after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -566,14 +611,6 @@ img {
 .section-title__heading {
   font-size: 1.428rem;
   line-height: 2rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around; }
-
-.col {
-  flex-basis: 31%; }
 
 .card__text {
   position: relative;
@@ -666,6 +703,51 @@ img {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff; }
+
+.swiper-button-prev {
+  background: url("../img/left.svg") no-repeat center;
+  width: 42px;
+  background-size: 42px;
+  height: 14px;
+  bottom: 0;
+  top: auto;
+  left: 0; }
+  .swiper-button-prev:after {
+    display: none; }
+
+.swiper-button-next {
+  background: url("../img/right.svg") no-repeat center;
+  width: 42px;
+  background-size: 42px;
+  height: 14px;
+  bottom: 0;
+  top: auto; }
+  .swiper-button-next:after {
+    display: none; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0; }
 
 .button-up {
   display: none;

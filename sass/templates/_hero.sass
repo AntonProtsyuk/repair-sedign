@@ -14,6 +14,15 @@
     height: 100%
     margin-top: -100px
     background-color: rgba($dark, 0.7)
+  &::after
+    content: ''
+    width: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 3.46rem
+    background-color: $dark
   &__content
     max-width: 47.85rem
     position: relative
@@ -31,7 +40,7 @@
   &__scroll-down
     position: absolute
     left: 0
-    bottom: -3.42rem
+    bottom: 0
     min-width: 17.6rem
     min-height: 6.92rem
     background-color: $dark
@@ -41,6 +50,7 @@
     display: flex
     justify-content: center
     align-items: center
+    z-index: 3
     &:after
       content: ''
       background: url('../img/arrow-down.svg') no-repeat center
