@@ -345,7 +345,8 @@ template {
     border: 1px solid #FFFFFF;
     background: transparent;
     color: #ffffff;
-    transition: 0.2s; }
+    transition: 0.2s;
+    padding: 16px 45px !important; }
     .button--outline:hover {
       background: #E3B873;
       border: 1px solid #E3B873; }
@@ -428,7 +429,9 @@ body {
     .section-title__heading {
       text-transform: uppercase;
       font-family: 'Yeseva one', cursive;
-      line-height: 138%; }
+      line-height: 138%;
+      font-style: normal;
+      font-weight: normal; }
       .section-title__heading--primary {
         color: #E3B873;
         text-align: left; }
@@ -466,17 +469,19 @@ img {
   justify-content: space-between;
   align-items: center; }
 
+.menu__nav {
+  margin-left: 1rem; }
+
 .logo {
   color: #E3B873;
   text-transform: uppercase;
-  font-size: 1.075rem;
-  margin-left: -0.6rem; }
+  font-size: 1.075rem; }
 
 .nav__item {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.4rem;
+  margin-right: 2.7rem;
   display: inline-block; }
   .nav__item:after {
     content: '';
@@ -499,7 +504,7 @@ img {
 
 .contacts__button {
   border: 1px solid transparent;
-  transition: 0.2s; }
+  transition: 0.2; }
   .contacts__button:hover {
     background-color: transparent;
     border: 1px solid #ffffff; }
@@ -714,7 +719,10 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 2rem; }
+  .swiper-slider-image {
+    margin-top: -13rem; }
   .swiper-slide__text {
     flex-basis: 50%;
     margin-bottom: 2.42rem;
@@ -804,7 +812,24 @@ img {
     color: #ffffff; }
   .section-title__description {
     max-width: 28rem;
-    color: #ffffff; } }
+    color: #ffffff; }
+  .swiper-slider-image {
+    margin-top: 0; }
+  .mobile-order-top {
+    order: -1; }
+  .col-50 {
+    width: 100%; }
+  .section-title {
+    text-align: center;
+    margin: 0 auto; }
+    .section-title__heading--primary {
+      color: #E3B873;
+      text-align: center; }
+    .section-title__word {
+      text-align: center;
+      display: block; }
+      .section-title__word::after {
+        display: none; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
