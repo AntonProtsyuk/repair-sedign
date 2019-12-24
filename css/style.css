@@ -893,15 +893,17 @@ img {
 .button-up {
   display: none;
   position: fixed;
-  right: 0;
-  bottom: 50px;
-  background-color: #131313;
-  color: #ffffff;
+  bottom: 60px;
+  right: 10px;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 2px;
   text-transform: uppercase;
-  text-decoration: none;
-  padding: 20px;
-  cursor: pointer; }
+  font-size: 0.93rem;
+  background-color: #E3B873;
+  color: #ffffff; }
   .button-up:hover {
+    cursor: pointer;
     background-color: #E3B873; }
 
 @media screen and (max-width: 1200px) {
