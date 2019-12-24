@@ -778,6 +778,8 @@ img {
   .footer__button {
     margin: auto;
     padding: 1.285rem 4.785rem; }
+  .footer__map {
+    margin-bottom: 4rem; }
 
 .modal {
   opacity: 0;
